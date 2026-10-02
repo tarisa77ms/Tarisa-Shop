@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarisa Shop - Fashion & Accessories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-dark text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span>Selamat Datang di Toko Kami</span>
+            <div>
+                <a href="#tentang" class="text-white text-decoration-none">
+                    Tentang Kami
+                </a>
+                <span class="mx-2">|</span>
+                <a href="#bantuan" class="text-white text-decoration-none">
+                    Bantuan
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    <header class="header">
+        <div class="container navbar">
+            <a href="#home" class="logo">
+                <img src="https://i.pinimg.com/736x/97/ec/82/97ec82315c22ae13045846877288f9b1.jpg" 
+				alt="Logo Tarisa Shop" class="img-fluid rounded-circle me-3" 
+				width="60" 
+				height="60" 
+				>
+                <div>
+                    <h2>Tarisa Shop</h2>
+                    <small>Fashion & Accessories</small>
+                </div>
+            </a>
+            <nav class="menu" id="mainMenu">
+                <a href="#home" class="active">Home</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn" type="button">Produk</button>
+                    <div class="dropdown-content">
+                        <a href="#produk" data-category="Semua">Semua Produk</a>
+                        <a href="#produk" data-category="Fashion">Baju</a>
+                        <a href="#produk" data-category="Sepatu">Sepatu</a>
+                        <a href="#produk" data-category="Tas">Tas</a>
+                        <a href="#produk" data-category="Aksesoris">Aksesoris</a>
+                    </div>
+                </div>
+                <a href="#kategori">Kategori</a>
+                <a href="#promo">Promo</a>
+                <a href="#tentang">Tentang</a>
+            </nav>
+            <div class="nav-right">
+                <button class="icon-btn" id="searchToggle" title="Cari">🔍</button>
+                <button class="icon-btn cart-btn" id="cartButton" title="Keranjang"> 🛒 <span id="cartCount">0</span>
+                </button>
+                <div id="authArea" class="auth-area">
+                    <button class="outline-btn" id="loginButton">Masuk</button>
+                    <button class="primary-small" id="registerButton">Daftar</button>
+                </div>
+            </div>
+        </div>
+        <div class="search-panel" id="searchPanel">
+            <div class="container search-inner">
+                <input type="text" id="searchInput" placeholder="Cari produk Tarisa Shop...">
+                <button class="primary-small" id="searchButton">Cari</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="hero-label">KOLEKSI TERBARU 2026</div>
+                    <h1>Temukan Gaya<br><span>Terbaikmu</span></h1>
+                    <p>
+                        Temukan berbagai pilihan fashion dan accessories berkualitas
+                        dengan harga terbaik hanya di Tarisa Shop.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" id="shopNow">Belanja Sekarang →</button>
+                        <button class="btn-secondary" id="promoNow">Lihat Promo</button>
+                    </div>
+                </div>
+<div class="position-relative bg-light rounded-4 overflow-hidden p-4">
+    <img 
+        src="https://i.pinimg.com/736x/94/e8/43/94e843bd35ee932c251f2e44f06a2068.jpg"
+        alt="Fashion Tarisa Shop"
+        class="img-fluid position-relative d-block mx-auto"
+        style="max-height: 500px; object-fit: cover;"
+    >
+    <div class="position-absolute top-0 start-0 m-4">
+    <span class="badge bg-white text-dark rounded-pill shadow px-3 py-2">
+        <i class="bi bi-star-fill text-warning"></i>
+        <span class="fw-semibold ms-1">
+           ⭐ 4.9/5
+   <div class="position-absolute bottom-0 end-0 m-4">
+    <span class="badge bg-white text-dark rounded-pill shadow px-3 py-2">
+        <i class="bi bi-truck text-success"></i>
+        Free Delivery
+    </span>
+</div>
+    </div>
+
+</div>
+        </section>
+        <section class="features">
+            <div class="container feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🚚</div>
+                    <div><h3>Gratis Pengiriman</h3><p>Untuk pembelian tertentu</p></div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <div><h3>Pembayaran Aman</h3><p>Transaksi aman & terpercaya</p></div>
+                </div> 
+                <div class="feature-item">
+                   <div class="feature-icon">
+    <i class="bi bi-star-fill text-warning"></i>
+</div>
+                    <div><h3>Produk Berkualitas</h3><p>Pilihan produk terbaik</p></div>
+                </div>
+                <div class="feature-item">
+                   <div class="feature-icon">
+    <i class="bi bi-chat-dots"></i>
+</div>
+                    <div><h3>Customer Service</h3><p>Siap membantu setiap hari</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="kategori">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="section-label">PILIHAN KATEGORI</div>
+                        <h2>Belanja Sesuai Kebutuhan</h2>
+                    </div>
+                    <a class="see-all" href="#produk">Lihat semua →</a>
+                </div>
+
+                <div class="category-grid">
+                    <button class="category-card" data-category="Fashion">
+                      <div data-category="Fashion">
+    <i class="bi bi-person-dress"></i>
+</div>
+                        <h3>Fashion</h3>
+                        <p>pakaian</p>
+                    </button>
+                    <button class="category-card" data-category="Sepatu">
+                       <div data-category="Sepatu">
+    <i class="bi bi-shoe"></i>
+</div>
+                        <h3>Sepatu</h3>
+                        <p>Gaya untuk langkahmu</p>
+                    </button>
+                    <button class="category-card" data-category="Tas">
+<div data-category="Tas">
+    <i class="bi bi-bag"></i>https://i.pinimg.com/736x/84/b4/31/84b4310189ddfd815304b16b3318f0da.jpg
+</div>
+</div>
+                        <h3>Tas</h3>
+                        <p>Tas wanita & pria</p>
+                    </button>
+                    <button class="category-card" data-category="Aksesoris">
+                        <div data-category="Aksesoris">
+    <i class="bi bi-gem"></i>
+</div>
+                        <h3>Aksesoris</h3>
+                        <p>Lengkapi gayamu</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section product-section" id="produk">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="section-label">PRODUK PILIHAN</div>
+                        <h2>Produk Terlaris Tarisa Shop</h2>
+                    </div>
+                    <span id="productResult" class="result-text">Menampilkan semua produk</span>
+                </div>
+
+                <div class="filter-row">
+                    <button class="filter-btn active" data-category="Semua">Semua</button>
+                    <button class="filter-btn" data-category="Fashion">Fashion</button>
+                    <button class="filter-btn" data-category="Sepatu">Sepatu</button>
+                    <button class="filter-btn" data-category="Tas">Tas</button>
+                    <button class="filter-btn" data-category="Aksesoris">Aksesoris</button>
+                </div>
+
+                <div class="product-grid" id="productGrid"></div>
+            </div>
+        </section>
+        <section class="promo-section" id="promo">
+            <div class="container">
+                <div class="promo-content">
+                    <div>
+                        <div class="promo-small">🔥 PROMO SPESIAL TARISA SHOP</div>
+                        <h2>Diskon hingga <span>50%</span></h2>
+                        <p>Gunakan kesempatan promo untuk mendapatkan fashion favoritmu dengan harga lebih hemat.</p>
+                        <button class="promo-button" id="promoProductButton">Belanja Sekarang</button>
+                    </div>
+                    <div class="promo-icon">🎁</div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="tentang">
+            <div class="container about-content">
+                <div class="about-logo">TS</div>
+                <div>
+                    <div class="section-label">TENTANG TARISA SHOP</div>
+                    <h2>Belanja Fashion Jadi Lebih Mudah</h2>
+                    <p>
+                        Tarisa Shop adalah website toko online sederhana bertema fashion dan accessories.
+                        Temukan apapun kebutuhan denagan harga terbaik cuma di Tarisa shop. 
+						Website ini dibuat menggunakan HTML untuk struktur halaman, CSS untuk tampilan,
+                        dan JavaScript untuk interaksi seperti login, daftar, pencarian, filter produk,
+                        keranjang, validasi form, dan logout.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="bantuan">
+        <div class="container footer-grid">
+            <div>
+                <h2>Tarisa Shop</h2>
+                <p>Fashion & Accessories untuk melengkapi gaya sehari-hari.</p>
+            </div>
+            <div>
+                <h3>Menu</h3>
+                <a href="#home">Home</a>
+                <a href="#produk">Produk</a>
+                <a href="#kategori">Kategori</a>
+                <a href="#promo">Promo</a>
+            </div>
+            <div>
+                <h3>Bantuan</h3>
+                <a href="#" id="footerLogin">Login / Daftar</a>
+                <a href="#" id="footerCart">Keranjang</a>
+                <a href="#tentang">Tentang Kami</a>
+            </div>
+        </div>
+        <div class="copyright">
+           � 2026 Tarisa Shop-Website Praktikum HTML, CSS & JavaScript
+        </div>
+    </footer>
+    <div class="modal" id="loginModal">
+        <div class="modal-box">
+            <button class="modal-close" data-close="loginModal">×</button>
+            <div class="modal-logo">TS</div>
+            <h2>Masuk ke Tarisa Shop</h2>
+            <p class="modal-subtitle">Silakan masuk untuk melanjutkan belanja.</p>
+
+            <form id="loginForm">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" required placeholder="contoh@email.com">
+
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" required minlength="6" placeholder="Minimal 6 karakter">
+
+                <button type="submit" class="form-submit">Masuk</button>
+            </form>
+
+            <p class="switch-auth">
+                Belum punya akun?
+                <button type="button" id="switchToRegister">Daftar sekarang</button>
+            </p>
+        </div>
+    </div>
+    <div class="modal" id="registerModal">
+        <div class="modal-box">
+            <button class="modal-close" data-close="registerModal">×</button>
+            <div class="modal-logo">TS</div>
+            <h2>Daftar Akun</h2>
+            <p class="modal-subtitle">Buat akun Tarisa Shop dengan data yang lengkap.</p>
+
+            <form id="registerForm">
+                <label for="registerName">Nama Lengkap</label>
+                <input type="text" id="registerName" required placeholder="Nama lengkap">
+
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" required placeholder="contoh@email.com">
+
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" required minlength="6" placeholder="Minimal 6 karakter">
+
+                <label for="registerAddress">Alamat</label>
+                <textarea id="registerAddress" required rows="3" placeholder="Alamat pengiriman"></textarea>
+
+                <button type="submit" class="form-submit">Daftar</button>
+            </form>
+
+            <p class="switch-auth">
+                Sudah punya akun?
+                <button type="button" id="switchToLogin">Masuk sekarang</button>
+            </p>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <h2>Keranjang Saya</h2>
+            <button id="closeCart" class="modal-close">×</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-summary">
+            <div><span>Total</span><strong id="cartTotal">Rp0</strong></div>
+            <button class="form-submit" id="checkoutButton">Checkout</button>
+        </div>
+    </aside>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
